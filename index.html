@@ -48,14 +48,14 @@
             transition: all 0.5s ease;
         }
 
-        #aboutMe p:hover {
+        #aboutMe>p:hover {
             transform: scale(1.05);
             color: #ffcc00;
         }
 
         #asideMain {
             background-image: url('assets/images/aside image portfolio.jpg');
-            position: relative;
+            position: fixed;
             height: 100vh;
             width: 600px;
         }
@@ -131,6 +131,222 @@
             transform: scale(1.2);
             filter: brightness(1.2);
         }
+
+        #project-section{
+            position:relative;
+        }
+
+        #project-section>nav{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            position: absolute;
+            gap: 20px;
+            margin-top: 550px;
+            margin-left: 700px;
+        }
+
+        #project-section>nav>div{
+            height: 130px;
+            width: 130px;
+            background:  #171717;
+            border: 2px solid #ffcc00;
+            text-align: center;
+            position: relative;
+        }
+
+
+        .link1 {
+            display: inline;
+            /*text-decoration: none;*/
+            color: white;
+            top:8px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            position: absolute;
+        }
+
+        #project-section>nav>div>img{
+            top: 15px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        /* General Styles for Box */
+        .box {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .link1 {
+            text-decoration: none;
+            color: white;
+            font-family: 'Inter', sans-serif; /* As you prefer Inter font */
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Hover Effect */
+        .box:hover {
+            transform: scale(1.1); /* Makes the box larger when hovered */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+        }
+
+        .box img {
+            transition: transform 0.3s ease;
+        }
+
+       #assignmrnt-section{
+           position: relative;
+       }
+
+       #verticalLine{
+           margin-top: 830px;
+           margin-left: 1000px;
+           position: absolute;
+       }
+
+       #horizontalLine1{
+           margin-top:900px ;
+           margin-left: 700px;
+           position: absolute;
+       }
+
+       #assignment01{
+           margin-top:882px ;
+           color: white;
+           margin-left: 800px;
+           position: absolute;
+       }
+
+        #horizontalLine2{
+            margin-top:1050px ;
+            margin-left: 700px;
+            position: absolute;
+        }
+
+        #assignment03{
+            margin-top:1030px ;
+            color: white;
+            margin-left: 800px;
+            position: absolute;
+        }
+
+        #horizontalLine3{
+            margin-top:1200px ;
+            margin-left: 700px;
+            position: absolute;
+        }
+
+        #assignment05{
+            margin-top:1185px ;
+            color: white;
+            margin-left: 800px;
+            position: absolute;
+        }
+
+        #horizontalLine4{
+            margin-top:1350px ;
+            margin-left: 700px;
+            position: absolute;
+        }
+
+        #assignment07{
+            margin-top:1335px ;
+            color: white;
+            margin-left: 800px;
+            position: absolute;
+        }
+
+        #horizontalLine5{
+            margin-top:1500px ;
+            margin-left: 700px;
+            position: absolute;
+        }
+
+        #assignment09{
+            margin-top:1485px ;
+            color: white;
+            margin-left: 800px;
+            position: absolute;
+        }
+
+        #horizontalLine6{
+            margin-top:975px ;
+            margin-left: 1005px;
+            position: absolute;
+        }
+
+        #assignment02{
+            margin-top:960px ;
+            color: white;
+            margin-left: 1105px;
+            position: absolute;
+        }
+
+        #horizontalLine7{
+            margin-top:1125px ;
+            margin-left: 1005px;
+            position: absolute;
+        }
+
+        #assignment04{
+            margin-top:1110px ;
+            color: white;
+            margin-left: 1105px;
+            position: absolute;
+        }
+
+        #horizontalLine8{
+            margin-top:1275px ;
+            margin-left: 1005px;
+            position: absolute;
+        }
+
+        #assignment06{
+            margin-top:1260px ;
+            color: white;
+            margin-left: 1105px;
+            position: absolute;
+        }
+
+        #horizontalLine9{
+            margin-top:1425px ;
+            margin-left: 1005px;
+            position: absolute;
+        }
+
+        #assignment08{
+            margin-top:1410px ;
+            color: white;
+            margin-left: 1105px;
+            position: absolute;
+        }
+
+        #horizontalLine10{
+            margin-top:1575px ;
+            margin-left: 1005px;
+            position: absolute;
+        }
+
+        #assignment10{
+            margin-top:1560px ;
+            color: white;
+            margin-left: 1105px;
+            position: absolute;
+        }
+
+
+
     </style>
 </head>
 
@@ -194,6 +410,118 @@
         </section>
 
     </aside>
+</main>
+
+<main id="project-section">
+
+    <!--Nav Section-->
+    <nav>
+        <div id="box1" class="box">
+            <a href class="link1">PRF CourseWork</a>
+            <img src="assets/images/WhatsApp%20Image%202024-07-30%20at%2012.59.44%20PM.jpeg" width="100" height="90"/>
+        </div>
+        <div id="box2" class="box">
+            <a href class="link1">OOP CourseWork</a>
+            <img src="assets/images/WhatsApp%20Image%202024-07-30%20at%2012.59.13%20PM.jpeg" width="100" height="90"/>
+        </div>
+        <div id="box3" class="box">
+            <a href class="link1">First Sem Final Project</a>
+            <img src="assets/images/WhatsApp%20Image%202024-07-30%20at%201.09.18%20PM.jpeg" width="100" height="90"/>
+        </div>
+        <div id="box4" class="box">
+            <a href class="link1">Layered Project</a>
+            <img src="assets/images/WhatsApp%20Image%202024-07-30%20at%201.02.50%20PM.jpeg" width="100" height="90"/>
+        </div>
+    </nav>
+</main>
+
+<main id="assignmrnt-section">
+    <div id="verticalLine">
+        <img src="assets/images/icons8-vertical-line-50.png" height="900" width="60"/>
+    </div>
+
+    <div id="horizontalLine1">
+        <img src="assets/images/icons8-horizontal-line-50.png" height="50" width="350"/>
+    </div>
+
+    <div id="horizontalLine2">
+        <img src="assets/images/icons8-horizontal-line-50.png" height="50" width="350"/>
+    </div>
+
+    <div id="horizontalLine3">
+        <img src="assets/images/icons8-horizontal-line-50.png" height="50" width="350"/>
+    </div>
+
+    <div id="horizontalLine4">
+        <img src="assets/images/icons8-horizontal-line-50.png" height="50" width="350"/>
+    </div>
+
+    <div id="horizontalLine5">
+        <img src="assets/images/icons8-horizontal-line-50.png" height="50" width="350"/>
+    </div>
+
+    <div id="horizontalLine6">
+        <img src="assets/images/icons8-horizontal-line-50.png" height="50" width="350"/>
+    </div>
+
+    <div id="horizontalLine7">
+        <img src="assets/images/icons8-horizontal-line-50.png" height="50" width="350"/>
+    </div>
+
+    <div id="horizontalLine8">
+        <img src="assets/images/icons8-horizontal-line-50.png" height="50" width="350"/>
+    </div>
+
+    <div id="horizontalLine9">
+        <img src="assets/images/icons8-horizontal-line-50.png" height="50" width="350"/>
+    </div>
+
+    <div id="horizontalLine10">
+        <img src="assets/images/icons8-horizontal-line-50.png" height="50" width="350"/>
+    </div>
+
+    <section id="assignment">
+        <div id="assignment01">
+            <h3>Assignment 01</h3>
+        </div>
+
+        <div id="assignment02">
+            <h3>Assignment 02</h3>
+        </div>
+
+        <div id="assignment03">
+            <h3>Assignment 03</h3>
+        </div>
+
+        <div id="assignment04">
+            <h3>Assignment 04</h3>
+        </div>
+
+        <div id="assignment05">
+            <h3>Assignment 05</h3>
+        </div>
+
+        <div id="assignment06">
+            <h3>Assignment 06</h3>
+        </div>
+
+        <div id="assignment07">
+            <h3>Assignment 07</h3>
+        </div>
+
+        <div id="assignment08">
+            <h3>Assignment 08</h3>
+        </div>
+
+        <div id="assignment09">
+            <h3>Assignment 09</h3>
+        </div>
+
+        <div id="assignment10">
+            <h3>Assignment 10</h3>
+        </div>
+    </section>
+
 </main>
 
 <!--AOS-->
