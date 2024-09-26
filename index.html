@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio2</title>
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--animate.css-->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <style>
+
+        body {
+            background: black;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        #aboutMe {
+            position: relative;
+        }
+
+        #aboutMe>p:nth-child(1) {
+            margin-top: 50px;
+            margin-left: 700px;
+            margin-right: 100px;
+            color: white;
+            line-height: 30px;
+            font-family: 'Inter', sans-serif;
+            position: absolute;
+            transition: all 0.5s ease;
+        }
+
+        #aboutMe>p:nth-child(2) {
+            margin-top: 300px;
+            margin-left: 700px;
+            margin-right: 100px;
+            color: white;
+            line-height: 30px;
+            font-family: 'Inter', sans-serif;
+            position: absolute;
+            transition: all 0.5s ease;
+        }
+
+        #aboutMe p:hover {
+            transform: scale(1.05);
+            color: #ffcc00;
+        }
+
+        #asideMain {
+            background-image: url('assets/images/aside image portfolio.jpg');
+            position: relative;
+            height: 100vh;
+            width: 600px;
+        }
+
+        #asideMain>aside {
+            width: 600px;
+            height: 100vw;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+        }
+
+        #asideMain>aside>ul {
+            margin-top: 200px;
+            margin-left:10px;
+            list-style:none;
+            color: white;
+            position: absolute;
+        }
+
+        #asideMain>aside>section:nth-child(1) {
+            position: absolute;
+        }
+
+        #asideMain>aside>section:nth-child(1)>div:first-child {
+            margin-top: 30px;
+            margin-left: 100px;
+            font-size: 40px;
+            font-family: 'Inter', sans-serif;
+            color: white;
+        }
+
+        #asideMain>aside>section:nth-child(1)>div:nth-child(2) {
+            margin-top: 10px;
+            margin-left: 135px;
+            font-size: 20px;
+            color: white;
+        }
+
+        #asideMain>aside>ul li h4 {
+            font-size: 20px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        #asideMain>aside>ul li:hover h4 {
+            color: #ffcc00;
+        }
+
+        /* Adding AOS animations for sections */
+        #asideMain>aside>ul li h4[data-aos] {
+            opacity: 0;
+        }
+
+        #asideMain>aside>ul li h4[data-aos].aos-animate {
+            opacity: 1;
+        }
+
+        #asideImages {
+            display: flex;
+            gap: 25px;
+            padding: 10px;
+            margin-top: 620px;
+            margin-left: 180px;
+        }
+
+        /* Adding hover effects for images */
+        #asideImages img {
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        #asideImages img:hover {
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="aboutMe">
+
+    <p data-aos="fade-right">
+        My name is Anjana Dahanayaka, a 21-year-old software engineering student from the vibrant city of Matara. With a deep passion for technology and innovation, I’m driven by the desire to solve real-world problems through creative and efficient software solutions. Currently pursuing my degree, I have honed my skills in Java, Hibernate, MySQL, and JavaFX, while also exploring UI/UX design, which has become a significant interest of mine. This technical foundation, paired with my fascination for elegant user interfaces, enables me to create applications that are both powerful and user-friendly.
+    </p>
+
+    <p data-aos="fade-left">
+        Beyond my academic pursuits, I’m an avid reader and traveler, always looking to expand my horizons. Whether it's exploring new places or diving into a captivating novel, these experiences fuel my creativity and help me stay inspired. With a vision to become a well-rounded software engineer, I am constantly learning and evolving, aiming to make a meaningful impact in the tech industry.
+    </p>
+
+</main>
+
+<main id="asideMain">
+
+    <aside>
+
+        <section>
+            <div><b>Anjana Dahanayaka</b></div>
+            <div>A Software Engineering Student</div>
+        </section>
+
+        <ul>
+            <li>
+                <div><h4 data-aos="fade-right">ABOUT</h4></div>
+            </li>
+            <li>
+                <h4 data-aos="fade-right">PROJECTS</h4>
+            </li>
+            <li>
+                <h4 data-aos="fade-right">GALLERY</h4>
+            </li>
+            <li>
+                <h4 data-aos="fade-right">SKILLS</h4>
+            </li>
+            <li>
+                <h4 data-aos="fade-right">CONTACT</h4>
+            </li>
+        </ul>
+
+        <section id="asideImages">
+            <div  id="image1">
+                <img src="assets/images/icons8-github-64.png" height="40" width="40"/>
+            </div>
+
+            <div id="image2" >
+                <img src="assets/images/icons8-linkedin-50.png" height="40" width="40"/>
+            </div>
+
+            <div id="image3">
+                <img src="assets/images/icons8-google-50.png" height="40" width="40"/>
+            </div>
+
+            <div id="image4">
+                <img src="assets/images/icons8-facebook-64.png" height="45" width="45"/>
+            </div>
+        </section>
+
+    </aside>
+</main>
+
+<!--AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+    });
+</script>
+
+</body>
+</html>
